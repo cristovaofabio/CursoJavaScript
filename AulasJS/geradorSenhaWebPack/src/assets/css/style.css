@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: rgb(163, 163, 163);
+    --primary-color-darker: rgb(36, 36, 36);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input{
+    font-size: 20px;
+    height: 30px;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+}
+
+input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+button{
+    display: block;
+    border: none;
+    background: var(--primary-color-darker);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover{
+    background: black;
+}
+
+.password{
+    font-size: 30px;
+    color: var(--primary-color-darker);
+    margin: 40px 0;
+}
