@@ -1,1 +1,0 @@
-Hi, in this moment I am learning a little bit about Express and static files.
