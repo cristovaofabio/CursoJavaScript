@@ -1,7 +1,9 @@
 exports.homePage = (req, res) => {
     res.render('index');
+    return;
 };
 
-exports.dataReceived = (req,res) =>{
-    res.send('Hi, I am a new route POST');
+exports.dataReceived = (req, res) => {
+    res.send(req.body);
+    return;
 };
