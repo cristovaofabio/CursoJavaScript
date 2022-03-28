@@ -11,7 +11,10 @@ HomeModel.create({
 */
 
 exports.homePage = (req, res) => {
-    res.render('index');
+    res.render('index', {
+        title: 'This is a title',
+        numbers: [2, 5, 3, 8, 0],
+    });
     return;
 };
 
