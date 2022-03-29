@@ -3,6 +3,8 @@
     <section class="container">
         <h1>Lorem ipsum dolor sit amet</h1>
         <form action="/" method="post">
+            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+            
             <label>My name: </label>
             <input type="text" name="my_name">
             <button>Submit</button>
