@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table th {
+            background: #ddd;
+        }
+
+        table caption {
+            caption-side: top;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with tables</h1>
+    <div class="responsive-table">
+        <table>
+            <caption>Some description for that table</caption>
+            <thead>
+                <tr>
+                    <th>Title 1</th>
+                    <th>Title 2</th>
+                    <th>Title 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="2">Body 1</td>
+                    <td>Body 3</td>
+                </tr>
+
+                <tr>
+                    <td>Body 4</td>
+                    <td>Body 5</td>
+                    <td rowspan="2">Body 6</td>
+                </tr>
+
+                <tr>
+                    <td>Body 7</td>
+                    <td>Body 8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
