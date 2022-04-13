@@ -1,7 +1,8 @@
-import Student from '../models/Student';
+// import Student from '../models/Student';
 
 class HomeController {
   async index(req, res) {
+    /*
     const newStudent = await Student.create(
       {
         firstname: 'Mike',
@@ -14,6 +15,8 @@ class HomeController {
     );
 
     res.json(newStudent);
+    */
+    res.json('index home');
   }
 }
 
