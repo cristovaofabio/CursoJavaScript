@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>My form</p>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full name" value="Default name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age">
+
+            <label for="birth_date">Birth date:</label>
+            <input type="date" id="birth_date" name="birth_date">
+
+            <label for="datetime">DateTime:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2022-06-05T08:47">
+
+            <label for="hour">Hour:</label>
+            <input type="time" id="hour" name="hour" value="08:49">
+
+            <label for="favorite_color">Favorite color:</label>
+            <input type="color" id="favorite_color" name="favorite_color" value="#ADD8E6">
+
+            <label for="email_address">E-mail address:</label>
+            <input type="email" id="email_address" name="email_address" placeholder="username@domain.com">
+
+            <label for="photo">Your photo:</label>
+            <input type="file" accept=".png,.jpg" id="photo" name="photo">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" list="marks">
+            <datalist id="marks">
+                <option value="0" label="0%">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="50%">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="100%">
+            </datalist>
+        </p>
+
+        <p>
+            <label for="select">Select one option:</label>
+            <select id="select" name="select">
+                <option value="value1" label="Value 1"></option>
+                <option value="value2" label="Value 2"></option>
+                <option value="value3" label="Value 3"></option>
+                <option value="value4" label="Value 4"></option>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Write something below:</label>
+            <textarea name="textarea" id="textarea" rows="5"></textarea>
+        </p>
+
+        <p>
+            Sex:<br>
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="male" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="female" value="female">
+        </p>
+
+        <p>
+            <label for="dev">Are you a dev?</label>
+            <input type="checkbox" id="dev" required>
+        </p>
+
+        <p>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+        </p>
+    </form>
+</body>
+
+</html>
