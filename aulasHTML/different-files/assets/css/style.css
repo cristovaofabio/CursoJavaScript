@@ -5,12 +5,38 @@
 
 .color-purple {
     color: blueviolet;
+    transition: all 100ms ease-in-out;
+}
+
+.color-purple:hover {
+    color: blue;
+}
+
+a {
+    color: brown;
+    transition: all 100ms ease-in-out;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    background: darkcyan;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px black;
+    outline: none;
+    border: 1px solid black;
 }
 
 .main-content h2 {
     font-style: italic;
 }
 
-[paragraph-color]{
+[paragraph-color] {
     color: green;
 }
