@@ -1,5 +1,16 @@
-.box {
-    background: red;
-    height: 120px;
-    width: 120px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color-purple {
+    color: blueviolet;
+}
+
+.main-content h2 {
+    font-style: italic;
+}
+
+[paragraph-color]{
+    color: green;
 }
