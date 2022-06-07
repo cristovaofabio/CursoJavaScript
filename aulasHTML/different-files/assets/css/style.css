@@ -40,3 +40,7 @@ input:focus {
 [paragraph-color] {
     color: green;
 }
+
+p:not(.no-blue){
+    background: lightgray;
+}
