@@ -44,3 +44,11 @@ input:focus {
 p:not(.no-blue){
     background: lightgray;
 }
+
+ul li:nth-child(even){
+    background-color: lightcoral;
+}
+
+ul li:nth-child(odd){
+    background-color: lightskyblue
+}
