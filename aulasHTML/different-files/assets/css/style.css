@@ -41,14 +41,28 @@ input:focus {
     color: green;
 }
 
-p:not(.no-blue){
+p:not(.no-blue) {
     background: lightgray;
 }
 
-ul li:nth-child(even){
+p::first-letter {
+    font-size: 40px;
+}
+
+p::selection {
+    background: rgb(247, 133, 88);
+    color: white;
+}
+
+ul li:nth-child(even) {
     background-color: lightcoral;
 }
 
-ul li:nth-child(odd){
+ul li:nth-child(odd) {
     background-color: lightskyblue
+}
+
+ul li::after {
+    content: ' - ';
+    color: brown;
 }
