@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 p {
     color: brown;
     background-color: lightgrey;
@@ -10,4 +14,33 @@ p {
     /*text-decoration: line-through;*/
     text-shadow: 2px 2px 5px lightcoral;
     text-transform: lowercase;
+}
+
+.daughter-1,
+.daughter-2 {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+
+.daughter-1 {
+    background: lightskyblue;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.daughter-2 {
+    background: lightsalmon;
+}
+
+ul {
+    height: 150px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background: lightslategray;
+    top: 0;
 }
