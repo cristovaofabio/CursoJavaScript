@@ -8,7 +8,7 @@
     padding: 10px;
 }
 
-.grid::after{
+.grid::after {
     content: '';
     display: block;
     clear: both;
@@ -24,5 +24,24 @@
 .grid .col-content {
     width: 100%;
     height: 100%;
-    background: #7c98b3; /* -- https://coolors.co/ -- */
+    background: #7c98b3;
+    /* -- https://coolors.co/ -- */
+}
+
+@media all and (max-width: 600px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 700px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .grid .col {
+        width: 25%;
+    }
 }
